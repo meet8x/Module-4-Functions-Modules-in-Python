@@ -7,6 +7,6 @@ nlog = math.log(val1)
 sinval = math.sin(val1)
 
 
-print(sqrt)
-print(nlog)
-print(sinval)
+print("square root:",sqrt)
+print("Logaritham",nlog)
+print("Sine",sinval)
