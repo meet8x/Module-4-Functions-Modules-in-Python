@@ -1,14 +1,10 @@
 
-def facto():
-    val = int(input("Eneter a Number:"))
+def facto(val):
     if val < 2:
         return 1
     else:
-        ans = 1
-        while (val>=1):
-           ans =ans*val
-           val = val - 1
-    return("Factorial of",val, "is:",ans)
-ans1 = facto()
-print(ans1)
+        return val * (facto(val - 1))
+
+ans1 = facto(5)
+print("Factorial of 5 is:",ans1)
 
