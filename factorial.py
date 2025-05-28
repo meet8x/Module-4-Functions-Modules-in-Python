@@ -1,10 +1,16 @@
 
-def facto(val):
-    if val < 2:
+def factorial(n):
+    if n < 0:
+        return "Factorial is not defined for negative numbers"
+    elif n < 2:
         return 1
     else:
-        return val * (facto(val - 1))
+        return n * (factorial(n - 1))
 
-ans1 = facto(5)
-print("Factorial of 5 is:",ans1)
+try:
+    num = int(input("Enter a number: "))
+    result = factorial(num)
+    print(f"Factorial of {num} is: {result}")
+except ValueError:
+    print("Please enter a valid integer.")
 
